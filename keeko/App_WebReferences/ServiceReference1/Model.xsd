@@ -56,7 +56,9 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="CartID" type="xs:int" />
       <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Price" type="xs:int" />
+      <xs:element minOccurs="0" name="Qnty" type="xs:int" />
       <xs:element minOccurs="0" name="UserEmail" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="VisaNumber" nillable="true" type="xs:string" />
     </xs:sequence>
@@ -81,6 +83,8 @@
       <xs:element minOccurs="0" name="UserEmail" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="UserPass" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Utelnum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="uAnswer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="uQuestion" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="User" nillable="true" type="tns:User" />
@@ -92,6 +96,7 @@
   <xs:element name="ArrayOfMailBox" nillable="true" type="tns:ArrayOfMailBox" />
   <xs:complexType name="MailBox">
     <xs:sequence>
+      <xs:element minOccurs="0" name="RecieverEmail" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="SenderEmail" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="SenderName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="msgBody" nillable="true" type="xs:string" />
